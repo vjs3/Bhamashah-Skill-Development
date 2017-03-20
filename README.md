@@ -5,4 +5,4 @@ This android application has been developed by team ProGiants as part of [Rajast
 # Developers
 
   - [Vishwajeet Srivastava](vishwajeetsrivastava.com) (vjs3) 
-  - [Harshita Gupta](harshitagupta.com)(harshitagupta30)
+  - [Harshita Gupta](harshitagupta.com) (harshitagupta30)
