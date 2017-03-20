@@ -1,4 +1,4 @@
-package com.progiants.bhamashahskilldevelopment;
+package com.progiants.bhamashahskilldevelopment.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.progiants.bhamashahskilldevelopment.R;
 import com.progiants.bhamashahskilldevelopment.models.HeadOfFamilyResponse;
 import com.progiants.bhamashahskilldevelopment.rest.ApiClient;
 import com.progiants.bhamashahskilldevelopment.rest.services.EducationalBackgroundService;
@@ -23,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
     TextView testView;
-
 
     // TODO - Get from user
     private final static String CLIENT_ID = "ad7288a4-7764-436d-a727-783a977f1fe1";
