@@ -2,6 +2,7 @@ package com.progiants.bhamashahskilldevelopment.activities;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.progiants.bhamashahskilldevelopment.Adapter.PlacesAdapter;
 import com.progiants.bhamashahskilldevelopment.R;
+import com.progiants.bhamashahskilldevelopment.RecyclerViewListener;
 import com.progiants.bhamashahskilldevelopment.models.Place;
 import com.progiants.bhamashahskilldevelopment.rest.services.PlacesService;
 
@@ -52,6 +54,20 @@ public class OneFragment extends Fragment {
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
         new GetPlaces(getActivity()).execute();
+        /*recyclerView.addOnItemTouchListener(
+                new RecyclerViewListener(getActivity(), new RecyclerViewListener.OnItemClickListener() {
+                    @Override public void onItemClick(View view, int position) {
+                        // TODO Handle item click
+                        Place place = placeList.get(position);
+
+                        Intent i = new Intent(getActivity(), SearchActivity.class);
+                        i.putExtra("name",place.getName());
+                        i.putExtra("lat",place.getLatitude());
+                        i.putExtra("longi",place.getLongitude());
+                        startActivity(i);
+                    }
+                })
+        );*/
         return view;
     }
     private class GetPlaces extends AsyncTask<Void, Void, ArrayList<Place>> {

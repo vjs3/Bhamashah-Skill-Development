@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        testView = (TextView) findViewById(R.id.test_text);
+//        testView = (TextView) findViewById(R.id.test_text);
         Button button = (Button) findViewById(R.id.btn_continue);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
