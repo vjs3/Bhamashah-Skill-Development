@@ -2,6 +2,7 @@ package com.progiants.bhamashahskilldevelopment.activities;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.AsyncTask;
@@ -16,6 +17,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.progiants.bhamashahskilldevelopment.R;
 import com.progiants.bhamashahskilldevelopment.models.Place;
@@ -32,22 +34,30 @@ public class SearchActivity extends FragmentActivity implements OnMapReadyCallba
     private final String TAG = getClass().getSimpleName();
     private LocationManager locationManager;
     private Location loc;
-
+    Double lat;
+    Double longi;
+    String name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        lat = getIntent().getDoubleExtra("lat",0.0);
+        longi = getIntent().getDoubleExtra("longi",0.0);
+         name = getIntent().getStringExtra("name");
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-        new GetPlaces(this).execute();
+//        new GetPlaces(this).execute();
 
     }
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        final LatLng TutorialsPoint = new LatLng(lat , longi);
+        Marker TP = googleMap.addMarker(new MarkerOptions()
+                .position(TutorialsPoint).title(name));
     }
 
     private class GetPlaces extends AsyncTask<Void, Void, ArrayList<Place>> {

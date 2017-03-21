@@ -40,8 +40,8 @@ public class SkillsActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new OneFragment(), "ONE");
-        adapter.addFragment(new TwoFragment(), "TWO");
+        adapter.addFragment(new OneFragment(), "OFFLINE");
+        adapter.addFragment(new TwoFragment(), "ONLINE");
         viewPager.setAdapter(adapter);
     }
 
@@ -73,4 +73,5 @@ public class SkillsActivity extends AppCompatActivity {
             return mFragmentTitleList.get(position);
         }
     }
+
 }
