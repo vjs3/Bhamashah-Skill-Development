@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 String educationStatus = response.body().getHofDetails().getEDUCATIONDESCENG();
                 if (educationStatus == "Literate"){
 
-                }
-                testView.setText(educationStatus);
+                }//testView.setText(educationStatus);
+
 
             }
 
