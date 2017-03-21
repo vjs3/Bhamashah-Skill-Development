@@ -28,7 +28,12 @@
             </intent-filter>
         </activity>
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyCJwH4s3FH_Ke9Py4yMXEfb20EzCSoGWXc"/>
+        <activity android:name=".activities.YouTubeActivity">
 
+        </activity>
+        <activity android:name=".activities.MainActivity">
+
+        </activity>
     </application>
 
 </manifest>
