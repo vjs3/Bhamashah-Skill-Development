@@ -1,8 +1,11 @@
 package com.progiants.bhamashahskilldevelopment.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,12 +39,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (CLIENT_ID.isEmpty()) {
-            Toast.makeText(getApplicationContext(), "Please obtain your API KEY from themoviedb.org first!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Bhamashah api not available", Toast.LENGTH_LONG).show();
             return;
         }
 
         testView = (TextView) findViewById(R.id.test_text);
-
+        Button button = (Button) findViewById(R.id.btn_continue);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SkillsActivity.class);
+                startActivity(intent);
+            }
+        });
         EducationalBackgroundService apiService =
                 ApiClient.getClient().create(EducationalBackgroundService.class);
 
@@ -55,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 testView.setText(educationStatus);
+
             }
 
             @Override

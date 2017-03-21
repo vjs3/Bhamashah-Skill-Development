@@ -3,10 +3,8 @@ package com.progiants.bhamashahskilldevelopment.activities;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.EditorInfo;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -32,12 +30,12 @@ public class YouTubeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_youtube);
-        searchInput = (EditText) findViewById(R.id.search_input);
-        videosFound = (ListView) findViewById(R.id.videos_found);
+        setContentView(R.layout.fragment_two);
+//        searchInput = (EditText) findViewById(R.id.search_input);
+//        videosFound = (ListView) findViewById(R.id.videos_found);
         handler = new Handler();
-
-        searchInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        searchOnYoutube("cooking");
+        /*searchInput.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if (actionId == EditorInfo.IME_ACTION_DONE) {
@@ -46,7 +44,7 @@ public class YouTubeActivity extends AppCompatActivity {
                 }
                 return true;
             }
-        });
+        });*/
 
     }
 

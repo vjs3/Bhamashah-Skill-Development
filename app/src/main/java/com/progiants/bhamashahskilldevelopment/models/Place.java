@@ -16,6 +16,15 @@ public class Place {
     private String name;
     private Double latitude;
     private Double longitude;
+    private String Location;
+
+    public String getLocation() {
+        return Location;
+    }
+
+    public void setLocation(String location) {
+        Location = location;
+    }
 
     public String getId() {
         return id;
