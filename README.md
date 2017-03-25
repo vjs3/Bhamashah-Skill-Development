@@ -15,5 +15,5 @@ This android application has been developed by team ProGiants as part of [Rajast
 
 # Developers
 
-  - [Vishwajeet Srivastava](http://vishwajeetsrivastava.com) (vjs3) [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/vishwajeets3)
-  - [Harshita Gupta](http://harshitagupta.com) (harshitagupta30) [![Twitter Follow](https://img.shields.io/twitter/follow/espadrine.svg?style=social&label=Follow)](https://twitter.com/harshitagupta30)
+  - [Vishwajeet Srivastava](http://vishwajeetsrivastava.com) (vjs3)
+  - [Harshita Gupta](http://harshitagupta.com) (harshitagupta30)
