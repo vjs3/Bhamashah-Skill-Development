@@ -6,7 +6,7 @@
 This android application has been developed by team ProGiants as part of [Rajasthan IT Hackathon 2017](http://itday.rajasthan.gov.in/), organised by Government of Rajasthan from 20 - 21 March 2017 in Jaipur, India.
 
 ## Notes:
-  - Several values are hardcoded as data sample provided to us was very less by organisers.
+  - Several values are hardcoded due to smaller set of available data samples.
   - Motto was to develop the minimum viable product (MVP) with in the given time line of hackathon, hence we haven't focussed on the Code Quality.
   - Several quick fixes has been used, just to save time during the event.
   - We have decided to work on the idea as and when we get time, hence there will be changes in coming time.
