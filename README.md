@@ -3,7 +3,7 @@
 [![Platform](https://img.shields.io/badge/platform-Android-blue.svg)](https://developer.android.com)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This android application has been developed by team ProGiants as part of [Rajasthan IT Hackathon 2017](http://itday.rajasthan.gov.in/), organised by Government of Rajasthan from 20 - 21 March 2017 in Jaipur, India.
+This android application has been developed by team ProGiants as part of [Rajasthan IT Hackathon 2017](http://itday.rajasthan.gov.in/), a 24 hour programming event, organised by Government of Rajasthan from 20 - 21 March 2017 in Jaipur, India.
 
 ## Notes:
   - Several values are hardcoded due to smaller set of available data samples.
